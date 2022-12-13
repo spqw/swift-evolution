@@ -1,4 +1,4 @@
-# Package Manager Feature name
+# Cross-Compilation Destination Bundles
 
 * Proposal: [SE-NNNN](NNNN-cross-compilation-destinations.md)
 * Authors: [Max Desiatov](https://github.com/MaxDesiatov)
@@ -194,7 +194,7 @@ Different formats of destination bundles can be considered, but we don't think t
 
 Platform triples are not specific enough in certain cases. For example, `aarch64-unknown-linux` host triple can’t prevent a user from installing a CC destination bundle on an unsupported Linux distribution. In the future we could deprecate `hostTriple` and `destinationTriple` JSON properties in favor of dictionaries with keys and values that describe aspects of platforms that are important for destinations. Such dictionaries could look like this:
 
-```json
+```json5
 "destination": {
   "kernel": "Linux",
   "libcFlavor": "Glibc",
