@@ -137,7 +137,7 @@ Authors of this document intend to publish source code for a macOS → Linux CC 
 
 As an example, destination publishers looking to add a library to an Ubuntu 22.04 destination environment would modify a `Dockerfile` similar to this one in CC destination generator source code:
 
-```docker
+```dockerfile
 FROM swift:5.7-jammy
 
 apt-get install -y \
